@@ -4,7 +4,7 @@
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="indieproject" />
+          <element id="module-output" name="TTS_RM" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: javax:javaee-web-api:7.0" />
@@ -30,7 +30,7 @@
       <element id="directory" name="META-INF">
         <element id="file-copy" path="$PROJECT_DIR$/target/indieproject/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="indieproject/web/Web" />
+      <element id="javaee-facet-resources" facet="TTS_RM/web/Web" />
     </root>
   </artifact>
 </component>

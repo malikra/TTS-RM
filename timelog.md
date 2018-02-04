@@ -3,9 +3,9 @@
 
 | Date | Task | Hours | Notes|
 |------|------|-------|------|
-| 1/20/17| Set up IntelliJ, Tomcat, mySQL for laptop.| 4 | |
-| 1/21/17 | Finished Week 1 Exercise 1   | 8  |   | 
-| 1/22/17 | Watch Week 2 Videos and finished Activities 2, 3, 4 | 4 | |
-| 1/25/17 | Started Week 2 Exercise 2   | 3  |   | 
-| 1/27/17 | Continued Exercise 2   | 4  |   | 
-| 1/21/17 | Finished Week 2 Exercise 2   | 8  |   | 
+| 01-13-2018 | watch week-0 videos | 1 | |
+| 01-14-2018 | set up IntelliJ, Tomee, Maven, SQL | 2  |   | 
+| 01-15-2018 | Finished week 1 Excercise | 3 | |
+| 01-21-2018 | watch week-2 videos | 3  |   | 
+| 01-27-2018 | Finished week 2 Excercise | 3 |   | 
+| 01-28-2018 | Finished week 2 Activity 4  | 2  |   | 

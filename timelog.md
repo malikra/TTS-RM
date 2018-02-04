@@ -1,7 +1,7 @@
 
 # Time Log
 
-| Date       | Task                               |HR| Comments |
+| Date       | Task                               |HRS| Comments |
 |------      |------                              |--|------    |
 | 01-13-2018 | watch week-0 videos                | 1 | |
 | 01-14-2018 | set up IntelliJ, Tomee, Maven, SQL | 2 | | 

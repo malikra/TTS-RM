@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="indieproject" />
+        <module name="TTS_RM" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="indieproject" target="1.8" />
+      <module name="TTS_RM" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

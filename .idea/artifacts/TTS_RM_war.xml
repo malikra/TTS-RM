@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TTS_RM:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="indieproject.war">
+      <element id="artifact" artifact-name="TTS_RM:war exploded" />
+    </root>
+  </artifact>
+</component>

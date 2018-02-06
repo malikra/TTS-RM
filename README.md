@@ -27,3 +27,5 @@ which can help them identifying their checkpoints and deadline of each task.
 * Unit Testing
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
+
+### [Time Log](TimeLog.md)

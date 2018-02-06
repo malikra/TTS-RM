@@ -28,4 +28,4 @@ which can help them identifying their checkpoints and deadline of each task.
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
 
-### [Time Log](TimeLog.md)
+### [Time Log](timelog.md)

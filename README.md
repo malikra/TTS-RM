@@ -28,4 +28,9 @@ which can help them identifying their checkpoints and deadline of each task.
   * JUnit tests to achieve 80%+ code coverage 
 * IDE: IntelliJ IDEA
 
+### Design
+* [Screen Design](DesignDocuments/Screens.md)
+* [Application Flow](DesignDocuments/applicationFlow.md)
+* [Database Design](DesignDocuments/databaseDiagram.png)
+
 ### [Time Log](timelog.md)

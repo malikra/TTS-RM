@@ -30,7 +30,7 @@ which can help them identifying their checkpoints and deadline of each task.
 
 ### Design
 * [Screen Design](DesignDocuments/Screens.md)
-* [Application Flow](ApplicationFlow.md)
+* [Application Flow](DesignDocuments/ApplicationFlow.md)
 * [Database Design](DesignDocuments/databaseDiagram.png)
 
 ### [Time Log](timelog.md)

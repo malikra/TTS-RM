@@ -1,2 +1,2 @@
 
-* [Login page](DesignDocuments/Login.png)
+* [Login page](Login.png)

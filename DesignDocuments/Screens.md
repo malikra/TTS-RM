@@ -1,2 +1,13 @@
 
 * [Login page](Login.png)
+* [Home page](Home.png)
+* [Registration page](UserRegistration.png)
+* [Sign In page](UserSignIn.png)
+* [Monthly Task Report page](MonthlyTasksReport.png)
+* [TODO Monthly Tasl List](TODOMonthlyTasksList.png)
+* [Task Create](TaskCreation.png)
+* [Task Delete](TaskDeletion.png)
+* [Task Update](TaskUpdate.png)
+* [TODO Task Create](TODOTaskCreate.png)
+* [TODO Task Delete](TODOTaskDelete.png)
+* [TODO Task Update](TODOTaskUpdate.png)

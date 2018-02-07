@@ -4,7 +4,7 @@
 * [Registration page](UserRegistration.png)
 * [Sign In page](UserSignIn.png)
 * [Monthly Task Report page](MonthlyTasksReport.png)
-* [TODO Monthly Tasl List](TODOMonthlyTasksList.png)
+* [TODO Monthly Task List](TODOMonthlyTasksList.png)
 * [Task Create](TaskCreation.png)
 * [Task Delete](TaskDeletion.png)
 * [Task Update](TaskUpdate.png)

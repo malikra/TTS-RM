@@ -180,11 +180,9 @@ public class UserDao {
                 user.setId(Integer.parseInt(row[0].trim()));
                 user.setFirstName(row[1].trim());
                 user.setLastName(row[2].trim());
-                user.setPlace(row[3].trim());
-                user.setEmail(row[4].trim());
-                user.setUserName(row[5].trim());
-                user.setPassword(row[6].trim());
-                user.setDateOfBirth(LocalDate.parse(row[7].trim()));
+                user.setUserName(row[3].trim());
+                user.setPassword(row[4].trim());
+                user.setDateOfBirth(LocalDate.parse(row[5].trim()));
 
                 insert(user);
                 transaction.commit();

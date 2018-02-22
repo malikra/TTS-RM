@@ -6,6 +6,9 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 /**
  * A class to represent a user.
@@ -19,14 +22,10 @@ public class User {
     private String firstName;
     @Column(name = "last_name")
     private String lastName;
-    @Column(name = "place")
-    private String place;
-    @Column(name = "email")
-    private String email;
-    @Column(name = "password")
-    private String password;
     @Column(name = "user_name")
     private String userName;
+    @Column(name = "password")
+    private String password;
     @Column(name = "date_of_birth")
     private LocalDate dateOfBirth;
     @Id
@@ -34,6 +33,8 @@ public class User {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    private Set<Task> tasks = new HashSet<>();
 
     /**
      * Instantiates a new User.
@@ -46,19 +47,15 @@ public class User {
      *
      * @param firstName   the first name
      * @param lastName    the last name
-     * @param place       the place
-     * @param email       the email
-     * @param password    the password
      * @param userName    the user name
+     * @param password    the password
      * @param dateOfBirth the date of birth
      */
-    public User(String firstName, String lastName, String place, String email, String password, String userName, LocalDate dateOfBirth) {
+    public User(String firstName, String lastName, String userName, String password, LocalDate dateOfBirth) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.place = place;
-        this.email = email;
-        this.password = password;
         this.userName = userName;
+        this.password = password;
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -134,18 +131,6 @@ public class User {
         this.id = id;
     }
 
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", userName='" + userName + '\'' +
-                ", id='" + id + '\'' +
-                '}';
-    }
-
-
     /**
      * Gets date of birth.
      *
@@ -184,42 +169,6 @@ public class User {
     }
 
     /**
-     * Gets place.
-     *
-     * @return the place
-     */
-    public String getPlace() {
-        return place;
-    }
-
-    /**
-     * Sets place.
-     *
-     * @param place the place
-     */
-    public void setPlace(String place) {
-        this.place = place;
-    }
-
-    /**
-     * Gets email.
-     *
-     * @return the email
-     */
-    public String getEmail() {
-        return email;
-    }
-
-    /**
-     * Sets email.
-     *
-     * @param email the email
-     */
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    /**
      * Gets password.
      *
      * @return the password
@@ -235,5 +184,74 @@ public class User {
      */
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    /**
+     * Gets tasks.
+     *
+     * @return the tasks
+     */
+    public Set<Task> getTasks() {
+        return tasks;
+    }
+
+    /**
+     * Sets tasks.
+     *
+     * @param tasks the tasks
+     */
+    public void setTasks(Set<Task> tasks) {
+        this.tasks = tasks;
+    }
+
+    /**
+     * Add task.
+     *
+     * @param task the task
+     */
+    public void addTask(Task task){
+        tasks.add(task);
+        task.setUser(this);
+    }
+
+    /**
+     * Remove task.
+     *
+     * @param task the task
+     */
+    public void removeTask(Task task){
+        tasks.remove(task);
+        task.setUser(null);
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return id == user.id &&
+                Objects.equals(firstName, user.firstName) &&
+                Objects.equals(lastName, user.lastName) &&
+                Objects.equals(userName, user.userName) &&
+                Objects.equals(password, user.password) &&
+                Objects.equals(dateOfBirth, user.dateOfBirth);
+    }
+
+    @Override
+    public int hashCode() {
+
+        return Objects.hash(firstName, lastName, userName, password, dateOfBirth, id);
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", id=" + id +
+                '}';
     }
 }

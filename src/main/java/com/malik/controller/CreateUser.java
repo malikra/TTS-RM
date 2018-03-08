@@ -1,7 +1,8 @@
 package com.malik.controller;
 
 
-import com.malik.persistance.UserDao;
+import com.malik.entity.User;
+import com.malik.persistance.GenericDao;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -25,7 +26,7 @@ public class CreateUser extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         //UserData userData = new UserData();
-        UserDao userDao = new UserDao();
+        GenericDao userDao = new GenericDao(User.class);
 
         String firstName = req.getParameter("firstName");
         String lastName = req.getParameter("lastName");

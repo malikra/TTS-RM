@@ -12,14 +12,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class UserDaoTest {
 
-    UserDao userDao;
     GenericDao genericDao;
     @BeforeEach
     void setUp() {
 
         Database database = Database.getInstance();
         database.runSQL("cleanDatabase.sql");
-        userDao = new UserDao();
         genericDao = new GenericDao(User.class);
 //        List<User> users = userDao.getAll();
 //        for (User user : users) {
@@ -66,7 +64,6 @@ class UserDaoTest {
 
     @Test
     void deleteAll() {
-        userDao = new UserDao();
         List<User> users = genericDao.getAll();
         for (User user : users) {
             genericDao.delete(user);

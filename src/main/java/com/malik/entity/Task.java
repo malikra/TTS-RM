@@ -28,6 +28,8 @@ public class Task {
     private LocalDateTime endTime;
 
     @ManyToOne
+    @JoinColumn(name = "user_id",
+            foreignKey = @ForeignKey(name = "tasks_user_id_fk"))
     private User user;
 
     /**

@@ -14,7 +14,6 @@
 |  2/3  | 4 hr  | Individual project planning        |
 |  2/5  | 4 hr  | Implementing the hibernate into the project |
 |  2/9  | 1 hr  | Debugging individual project test unit              |
-|  2/10 | 0 hr  |               |
 |  2/11 | 3 hr  | Modifying Time Log table and Project Plan              |
 |  2/12 | 3 hr  | Watching Videos for week5, applying demos to week-1 exercise |
 |  2/15 | 3 hr  | Implementing the One-To-Many into the project               |
@@ -26,14 +25,11 @@
 |  2/25 | 6 hr  | Deploying Indie project into the AWS, updating Timelog, adding project review feedback, and updating the Wireframe design |
 |  2/26 | 6 hr  | Watching all videos for week 7 Authentication   |
 |  2/27 | 1 hr  | Work on implementing week 7 in the project  |
-|  2/28 | 0 hr  |   |
 |  3/1 |  3 hr  | Continue the work on implementing authentication in project  |
 |  3/2 |  2 hr  | Updating Timelog, and troubleshooting AWS authentication  |
 |  3/3 |  4 hr  | Implementing authentication in project on AWS  |
 |  3/4 |  4 hr  | Implementing authentication in project on AWS - troubleshooting  |
 |  3/5 |  2 hr  | Implementing authentication in project on AWS - finished  |
-|  3/6 |  0 hr  |   |
-|  3/7 |  0 hr  |   |
 |  3/8 |  3 hr  | Watch all videos for SOAP Web Services  |
 |  3/9 |  3 hr  | Complete all SOAP exercises  |
 |  3/10 | 3 hr  | Update the Product entity for project  |

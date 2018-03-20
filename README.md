@@ -34,3 +34,4 @@ which can help them identifying their checkpoints and deadline of each task.
 * [Database Design](DesignDocuments/databaseDiagram.png)
 
 ### [Time Log](timelog.md)
+### [Project Plan](ProjectPlan.md)

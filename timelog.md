@@ -21,7 +21,6 @@
 |  2/17 | 3 hr  | Creating the Servlet and JSPs for the project, and running all tests              |
 |  2/18 | 2 hr  | Searching the web for free templates to use for the project              |
 |  2/23 | 3 hr  | Watching all videos for AWS              |
-|  2/24 | 3 hr  | Deploying the week-1 exercise to AWS, adding week 5 presentations feedback              |
 |  2/25 | 6 hr  | Deploying Indie project into the AWS, updating Timelog, adding project review feedback, and updating the Wireframe design |
 |  2/26 | 6 hr  | Watching all videos for week 7 Authentication   |
 |  2/27 | 1 hr  | Work on implementing week 7 in the project  |
@@ -32,6 +31,6 @@
 |  3/5 |  2 hr  | Implementing authentication in project on AWS - finished  |
 |  3/8 |  3 hr  | Watch all videos for SOAP Web Services  |
 |  3/9 |  3 hr  | Complete all SOAP exercises  |
-|  3/10 | 3 hr  | Update the Product entity for project  |
-|  3/11 | 3 hr  | Tested all the methods for ProductDaoTest for project  |
+|  3/10 | 3 hr  | Update the Task entity for project  |
+|  3/11 | 3 hr  | Tested all the methods for TaskDAO for project  |
 |  3/12 | 2 hr  |   |

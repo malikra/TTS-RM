@@ -1,7 +1,7 @@
 
 # Time Log
 
-| Date  | Hours |   Accomplishment |
+| Date  | Hours |Accomplishment |
 |------ |------  |---------   |
 |  1/13  | 1 hr  |  watch week-0 videos                 |
 |  1/14  | 2 hr  | set up IntelliJ, Tomee, Maven, SQL | 

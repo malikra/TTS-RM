@@ -4,6 +4,8 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 /**
@@ -170,5 +172,15 @@ public class Task {
                 ", endTime=" + endTime +
                 ", user=" + user +
                 '}';
+    }
+
+    public List<Task> getAllTaskForUser(int userId, List<Task> listOfTasks) {
+        List<Task> userTask = new ArrayList<Task>();
+        for(Task task : listOfTasks){
+            if(userId == task.getUser().getId()){
+                userTask.add(task);
+            }
+        }
+        return userTask;
     }
 }

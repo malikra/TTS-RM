@@ -1,62 +1,32 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Sign-Up/Login Form</title>
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
+    <meta charset="UTF-8">
+    <title>Sign-Up/Login Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-      <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="form">
+<div class="form">
 
-      <ul class="tab-group">
-        <li ><a href="userRegistrationForm.jsp">Sign Up</a></li>
-        <li class="tab active"><a href="#login">Log In</a></li>
-        <li ><a href="userInfo.jsp">Admin</a></li>
-      </ul>
+    <ul style="width: 110%" class="tab-group">
+        <li><a href="${pageContext.request.contextPath }/userRegistrationForm.jsp">Sign Up</a></li>
+        <%--<li class="tab active"><a href="#login">Log In</a></li>--%>
+        <li><a href="${pageContext.request.contextPath }/userLogin.jsp">Log In</a></li>
+        <li><a href="${pageContext.request.contextPath }/userInfo.jsp">Admin</a></li>
+    </ul>
+    <div style="text-align: center">
+        <img style="width: 100%; border: 1px solid red" src="image/eventTracking.jpg" alt="event tracking pic">
 
-      <div class="tab-content">
-        <div id="login">
-          <h1>Welcome Back!</h1>
-
-          <form action="/" method="post">
-
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email"required autocomplete="off"/>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password"required autocomplete="off"/>
-          </div>
-
-          <button class="button button-block"/>Log In</button>
-
-          </form>
-
-        </div>
-
-      </div><!-- tab-content -->
-
+    </div>
 </div> <!-- /form -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script  src="js/index.js"></script>
-
-
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/index.js"></script>
 
 
 </body>

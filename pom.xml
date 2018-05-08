@@ -28,8 +28,6 @@
             <artifactId>junit-platform-surefire-provider</artifactId>
             <version>1.0.0</version>
           </dependency>
-
-
         </dependencies>
       </plugin>
     </plugins>
@@ -62,14 +60,12 @@
       <version>4.12.0</version>
       <scope>test</scope>
     </dependency>
-
-
+    <!--Ajax dependencies-->
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-web-api</artifactId>
       <version>7.0</version>
     </dependency>
-
     <!-- log4j2 dependencies-->
     <dependency>
       <groupId>org.apache.logging.log4j</groupId>
@@ -81,14 +77,12 @@
       <artifactId>log4j-core</artifactId>
       <version>2.10.0</version>
     </dependency>
-
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
     <dependency>
       <groupId>org.hibernate</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>5.2.12.Final</version>
     </dependency>
-
     <!-- c3p0 - used to handle connection pooling with hibernate -->
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-c3p0 -->
     <dependency>
@@ -96,21 +90,18 @@
       <artifactId>hibernate-c3p0</artifactId>
       <version>5.2.12.Final</version>
     </dependency>
-
     <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
       <version>5.1.39</version>
     </dependency>
-
     <!-- https://mvnrepository.com/artifact/jstl/jstl -->
     <dependency>
       <groupId>jstl</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
-
     <!-- Google API -->
     <dependency>
       <groupId>com.google.api-client</groupId>
@@ -138,7 +129,41 @@
       <artifactId>google-oauth-client-jetty</artifactId>
       <version>1.23.0</version>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+    <dependency>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
+      <version>2.23.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.containers -->
+    <dependency>
+      <groupId>org.glassfish.jersey.containers</groupId>
+      <artifactId>jersey-container-servlet</artifactId>
+      <version>2.23.2</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-core</artifactId>
+      <version>2.8.3</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-annotations</artifactId>
+      <version>2.8.3</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.8.3</version>
+    </dependency>
+    <!--Gson dependency-->
+    <dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.3</version>
+    </dependency>
   </dependencies>
 
 </project>

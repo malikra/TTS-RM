@@ -31,9 +31,9 @@ public class GenericDao<T> {
     /**
      * Get user by id
      */
-    public <T>T getById(int id) {
+    public <T> T getById(int id) {
         Session session = getSession();
-        T entity = (T)session.get(type, id);
+        T entity = (T) session.get(type, id);
         session.close();
         return entity;
     }
@@ -52,7 +52,7 @@ public class GenericDao<T> {
         int id = 0;
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
-        id = (int)session.save(entity);
+        id = (int) session.save(entity);
         transaction.commit();
         session.close();
         return id;
@@ -68,7 +68,8 @@ public class GenericDao<T> {
     }
 
 
-    /** Return a list of all users
+    /**
+     * Return a list of all users
      *
      * @return All users
      */
@@ -113,7 +114,7 @@ public class GenericDao<T> {
     public List<T> getByPropertyLike(String propertyName, String value) {
         Session session = getSession();
 
-        logger.debug("Searching for user with {} = {}",  propertyName, value);
+        logger.debug("Searching for user with {} = {}", propertyName, value);
 
         CriteriaBuilder builder = session.getCriteriaBuilder();
         CriteriaQuery<T> query = builder.createQuery(type);
@@ -145,10 +146,30 @@ public class GenericDao<T> {
 
         return list;
     }
-    private Session getSession(){
+
+    private Session getSession() {
 
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         return session;
+    }
+
+    public List<T> getByPropertyEqual(String propertyName1, String value1, String propertyName2, String value2) {
+        Session session = getSession();
+
+        logger.debug("Searching for user with " + propertyName1 + " = " + value1 + propertyName2 + " = " + value2);
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+        CriteriaQuery<T> query = builder.createQuery(type);
+        Root<T> root = query.from(type);
+        query.select(root).where(builder.and(
+                builder.equal(root.get(propertyName1), value1),
+                builder.equal(root.get(propertyName2), value2)
+                )
+        );
+        List<T> list = session.createQuery(query).getResultList();
+
+        session.close();
+        return list;
     }
 
 }

@@ -33,4 +33,24 @@
 |  3/9 |  3 hr  | Complete all SOAP exercises  |
 |  3/10 | 3 hr  | Update the Task entity for project  |
 |  3/11 | 3 hr  | Tested all the methods for TaskDAO for project  |
-|  3/12 | 2 hr  |   |
+|  3/15 |  3 hr  | Continue the work on implementing authentication in project  |
+|  3/20 |  2 hr  | Updating Timelog, and added new functionality  |
+|  3/25 |  4 hr  | Added Calendar Jquerry API|
+|  4/2 |  4 hr  | Working on Calendar Jquerry API what how to extract events|
+|  4/5 |  2 hr  | Working on Calendar Jquerry API what how to extract events |
+|  4/8 |  3 hr  | Working on Calendar Jquerry API what how to extract events |
+|  4/12 |  3 hr  | Working on Calendar Jquerry API what how to extract events |
+|  4/13 | 3 hr  | Update the Role entity for project  |
+|  4/15 | 3 hr  | working on JAAS Tomcat form authentication for project  |
+|  4/17 | 3 hr  | working on JAAS Tomcat form authentication for project created new JSP pages |
+|  4/18 | 3 hr  | working on JAAS Tomcat form authentication for project Added Admin Role  |
+|  4/25 | 3 hr  | Added new Event related Controllers  |
+|  4/26 | 3 hr  | Added new Event related JSP pages  |
+|  4/27 | 3 hr  | Added new Event related Business Objects  |
+|  5/01 | 3 hr  | Adding code to consume USA Holidays webservice   |
+|  5/02 | 3 hr  | Work on to add registered-user Authentications to the Event functionalities like to Add, Modify and delete   |
+|  5/04 | 3 hr  | Work on to add registered-user Authentications to the Event functionalities like to Add, Modify and delete |
+|  5/05 | 3 hr  | Work on to add junit test code for USA Holidays webservice.  |
+|  5/06 | 6 hr  | bad news my hard drive crashed, i lost all of my work. I suppose to work on Test coverage but can't do any more i am done   |
+|  5/07 | 4 hr  | Added new hard drive. Can't connect with my AWS EC2 instance. Work again to get new key pair file and started EC2 instance make it working started Tomcat on AWS again and able to bring up my project again on AWS  |
+|  5/08 | 4 hr  | Worked on adding some videos on my project  |

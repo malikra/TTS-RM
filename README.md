@@ -35,3 +35,4 @@ which can help them identifying their checkpoints and deadline of each task.
 
 ### [Time Log](timelog.md)
 ### [Project Plan](ProjectPlan.md)
+### [Vidoes](DesignDocuments/projectVideos.md)

@@ -31,7 +31,7 @@ which can help them identifying their checkpoints and deadline of each task.
 ### Design
 * [Screen Design](DesignDocuments/Screens.md)
 * [Application Flow](DesignDocuments/ApplicationFlow.md)
-* [Database Design](DesignDocuments/databaseDiagram.png)
+* [Database Design](DesignDocuments/databaseDiagram.md)
 
 ### [Time Log](timelog.md)
 ### [Project Plan](ProjectPlan.md)
